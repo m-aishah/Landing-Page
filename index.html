@@ -7,6 +7,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
+		<style>
+			/* Fix Devicons font display issue */
+			@import url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css');
+		</style>
+
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNRNR5WMDS"></script>
@@ -51,109 +58,155 @@
 							</article>
 
 						<!-- projects -->
-							<article id="projects" class="panel">
-								<header>
-									<h2>My Projects</h2>
-								</header>
-								<p>
-									Here are some projects, I have built!
-								</p>
-								<section>
-									<div class="project-grid">
-										<div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP. Checking something out. will this expand? will it be bigger?</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
+						<article id="projects" class="panel">
+							<header>
+								<h2>My Projects</h2>
+							</header>
+							<p>Here are some projects I have built!</p>
+							<div class="project-filter">
+								<button class="filter-btn active" data-filter="all">All</button>
+								<button class="filter-btn" data-filter="ai">AI</button>
+								<button class="filter-btn" data-filter="web">Web</button>
+								<button class="filter-btn" data-filter="mobile">Mobile</button>
+								<button class="filter-btn" data-filter="CLI">Command Line</button>
+							</div>
+							<section class="project-grid">
+								<div class="project-card featured" data-category="ai web">
+									<div class="project-info">
+										<span class="project-status">Featured</span>
+										<h3>Investment Analysis Tool</h3>
+										<p>An API that helps family make investment decisions on construction projects based on their preferences. </p>
+										<div class="tech-icons">
+											<i class="fab fa-python" title="Python"></i>
+											<i class="fas fa-brain" title="Machine Learning"></i>
+											<i class="fab fa-aws" title="AWS"></i>
+											<i class="devicon-flask-original" title="Flask"></i> 
+											<i class="fas fa-robot" title="GPT"></i> 
 										</div>
-										<div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP.</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
-										  </div>
-										  <div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP.</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
-										  </div>
-										  <div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP.</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
-										  </div>
-										  <div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP.</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
-										  </div>
-										  <div class="project-card">
-											<div class="project-info">
-											  <h3>AI Chatbot</h3>
-											  <p>An intelligent conversational agent using NLP.</p>
-											  <div class="tech-icons">
-												<i class="fab fa-python" title="Python"></i>
-												<i class="fas fa-brain" title="Machine Learning"></i>
-											  </div>
-											</div>
-											<div class="project-links">
-											  <a href="#" class="project-link">View Source</a>
-											  <a href="#" class="project-link">Live Demo</a>
-											</div>
-										  </div>
 									</div>
-								</section>
-							</article>
+									<div class="expanded-content">
+										<p>I was assigned this project as an intern at CyprusCodes. I built it for a partner firm - Dovec Construction. The API works as an extension for CMND.ai</p>
+										<span class="project-date">Status: In progress</span>
+									</div>
+									<div class="project-links">
+										<a href="https://github.com/m-aishah/InvestmentAnalysis" class="project-link">View Source</a>
+										<a href="#" class="project-link">Live Demo</a>
+									</div>
+								</div>
+								<div class="project-card" data-category="CLI">
+									<div class="project-info">
+										<h3>Monty Interpreter</h3>
+										<p>The Monty ByteCode Interpreter is a project aimed at creating an interpreter for Monty ByteCodes files.</p>
+										<div class="tech-icons">
+											<i class="devicon-c-plain" title="C"></i>
+            								<i class="devicon-bash-plain" title="Bash"></i>
+            								<i class="devicon-brainfuck-plain" title="Brainfuck"></i>
+											<i class="devicon-dsa" title="DSA"></i>
+										</div>
+									</div>
+									<div class="expanded-content">
+										<p>Monty 0.98 is a scripting language that is first compiled into Monty byte codes, similar to Python. It relies on a unique stack with specific instructions to manipulate it. This project focuses on implementing these instructions in C, allowing users to execute Monty scripts.</p>
+										<span class="project-date">Completed: September 2023</span>
+									</div>
+									<div class="project-links">
+										<a href="https://github.com/m-aishah/monty" class="project-link">View Source</a>
+										<a href="#" class="project-link">Live Site</a>
+									</div>
+								</div>								
+								<div class="project-card" data-category="web ai">
+									<div class="project-info">
+										<span class="project-status">Hackathon</span>
+										<h3>ConstructProphet AI</h3>
+										<p>An API that provides construction companies with a suite of tools for construction planning and decision-making.</p>
+										<div class="tech-icons">
+											<i class="fas fa-trophy" title="Trophy"></i>
+											<i class="fas fa-brain" title="Machine Learning"></i>
+											<i class="fas fa-robot" title="GPT"></i> 
+											<i class="fab fa-python" title="Python"></i>								
+											<i class="fab fa-aws" title="AWS"></i>
+											<i class="devicon-flask-original" title="Flask"></i> 																						
+										</div>
+									</div>
+									<div class="expanded-content">
+										<p>I actually made this for my very first AI hackathon. THis project won my team 2nd place with a prize money of 45,000TL : )</p>
+										<span class="project-date">Completed: April 2024</span>
+									</div>
+									<div class="project-links">
+										<a href="https://github.com/m-aishah/ConstructProphet/tree/main/cmnd-extension-flask" class="project-link">View Source</a>
+										<a href="https://youtu.be/nr7rnxkWrAo?feature=shared" class="project-link">Demo Video</a>
+									</div>
+								</div>
+								<div class="project-card" data-category="web CLI">
+									<div class="project-info">
+										<h3>The Betty Fixer</h3>
+										<p>A command line and web application built to fix betty errors in a specified C file.</p>
+										<div class="tech-icons">
+											<i class="devicon-c-plain" title="C"></i>
+											<i class="devicon-bash-plain" title="Bash"></i>
+											<i class="fas fa-memory" title="Memory"></i> 
+											<i class="devicon-flask-original" title="Flask"></i> 
+											<i class="fab fa-python" title="Python"></i>
+											<i class="fab fa-html5" title="HTML5"></i>
+											<i class="fab fa-css3-alt" title="CSS3"></i>
+											<i class="fab fa-js" title="JavaScript"></i>
+										</div>
+									</div>
+									<div class="expanded-content">
+										<p>A friend and I built this to help programmers with betty errors so that the resources that would have gone into worrying about such errors can be employed in more important areas (like the actual logic of the code).</p>
+										<span class="project-date">Completed: May 2024</span>
+									</div>
+									<div class="project-links">
+										<a href="https://github.com/m-aishah/Betty-Fixer-v2.0" class="project-link">View Source</a>
+										<a href="https://ezejanu.wixsite.com/bettyfixer" class="project-link">Live Site</a>
+									</div>
+								</div>
+								<div class="project-card" data-category="web">
+									<div class="project-info">
+										<h3>📡SerialComm</h3>
+										<p>A versatile C++ library for seamless serial communication across Windows and Linux!</p>
+										<div class="tech-icons">
+											<i class="devicon-cplusplus-plain" title="C++"></i> 
+            								<i class="devicon-arduino-plain" title="Arduino"></i>            
+										</div>
+									</div>
+									<div class="expanded-content">
+										<p>This library is your go-to solution for handling serial communication in your C++ projects.  Compatible with both Windows and Linux, SerialCommCPP makes cross-platform serial communication a breeze! 🌍💻</p>
+										<span class="project-date">Completed: March 2024</span>
+									</div>
+									<div class="project-links">
+										<a href="https://github.com/m-aishah/Serial-Communication" class="project-link">View Source</a>
+										<a href="#" class="project-link">Live Site</a>
+									</div>
+								</div>
+				
+								<!-- Add more project cards here -->
+
+								<div class="project-card contact-card" style="display: none;">
+									<div class="project-info">
+										<h3>🔗 Connect with Me</h3>
+										<p>Follow my work on GitHub or get in touch with me!</p>
+										<div class="contact-icons">
+											
+											<a href="https://github.com/m-aishah" class="github-link">
+												<i class="fab fa-github"></i> GitHub
+											</a><br><br>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="pagination">
+								<button class="prev-btn" disabled>&laquo; Previous</button>
+								<span class="page-info">Page 1</span>
+								<button class="next-btn">Next &raquo;</button>
+							</div>
+						</article>
 
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="https://formspree.io/f/mjkbwgbp" method="POST">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
@@ -174,6 +227,7 @@
 										</div>
 									</div>
 								</form>
+								
 							</article>
 
 					</div>
@@ -182,7 +236,7 @@
 					<div id="footer">
 						<ul class="copyright">
 							<li>&copy; 2024 Aishah Mabayoje. All rights reserved.</li>
-							<li><a href="linkedin.com/in/aishah-mabayoje-a78430252/"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://linkedin.com/in/aishah-mabayoje-a78430252/"><span class="label">LinkedIn</span></a></li>
         					<li><a href="https://github.com/m-aishah" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
         					<li><a href="mailto:maishah2540@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
