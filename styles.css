@@ -75,7 +75,7 @@ h2 {
     opacity: 1;
 }
 
-.project-link {
+.project-links {
     margin-top: 15px;
     opacity: 0;
     transition: opacity 0.3s ease;
