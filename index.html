@@ -37,14 +37,16 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#about" class="icon solid fa-user"><span>About</span></a>
 						<a href="#projects" class="icon solid fa-folder"><span>Projects</span></a>
+						<a href="#faq" class="icon solid fa-question"><span>FAQ</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Me -->
+						<!-- Home page -->
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Aishah Mabayoje</h1>
@@ -56,6 +58,37 @@
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
+
+							<!-- About me -->
+                            <article id="about" class="panel">
+								<header>
+									<h2>About Me</h2>
+								</header>
+								<div class="about-content">
+									<p>Greetings! I'm Aishah, a Nigerian student on the cusp of my final year in Computer Engineering. As the eldest of five siblings, I'm driven by a desire to set a positive example and pave the way for those who follow.</p>
+									<p>My journey in tech has been a deliberate exploration. From Web3 to systems programming, from microprocessors to AR, I've dipped my toes in various pools of knowledge. This diverse experience has led me back to my first love: Machine Learning and AI. It's here that I see the future, not just for myself, but for the world at large.</p>
+									<p>I'm passionate about leveraging AI to solve real-world problems and make a positive impact. My goal is to bridge the gap between cutting-edge technology and practical applications that can improve lives.</p>
+									<p>As I approach my final year, I'm focused on honing my skills and building meaningful projects. I'm excited about the challenges ahead and ready to contribute my unique perspective to the field of AI.</p>
+									<p>I believe in the power of hard work, continuous learning, and collaboration. If you're looking for a dedicated, versatile, and forward-thinking AI engineer who's not afraid to tackle complex problems, let's connect!</p>
+								</div>
+								<div class="social-icons">
+									<a href="https://www.linkedin.com/in/aishah-mabayoje-a78430252/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+									<a><i class="fas fa-file-alt" id="openCV" title="View My CV"></i></a>
+									<a href="https://github.com/m-aishah" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+									
+								</div>
+							</article>
+							
+							<!-- CV Modal -->
+							<div id="cvModal" class="modal">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button id="expandCV" class="expand-btn"><i class="fas fa-expand"></i></button>
+										<span class="close">&times;</span>
+									</div>
+									<iframe id="cvPdf" src="./docs/CV.pdf" frameborder="0"></iframe>
+								</div>
+							</div>
 
 						<!-- projects -->
 						<article id="projects" class="panel">
@@ -251,7 +284,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-		<script src="scripts.js"></script>
+			<script src="scripts.js"></script>
 	</body>
 </html>
